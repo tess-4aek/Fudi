@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Fudi</title>
+</head>
+
+<body>
+    <div class="grid-wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header__rightside">
+                <div class="header__log-in">LOG IN</div>
+                <div class="header__sign-up">SIGN UP</div>
+                <div class="header__menu-btn menu-btn">
+                    <div class="menu-btn__elem"></div>
+                    <nav class="header__menu-content">
+                        <ul>
+                            <li><a href="#benefits">Преимущества</a></li>
+                            <li><a href="#fudi-app">Приложение</a></li>
+                            <li><a href="#reviews">Отзывы</a></li>
+                            <li><a href="#recipts">Рецепты</a></li>
+                            <li><a href="#stats">Статистика</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <!-- modal log-in -->
+<div class="modal-log-in">
+    <div class="modal-log-in__wrapper">
+        <div class="modal-log-in__close"></div>
+        <h4 class="feedback__title_up">Log In</h4>
+        <form id="feedbackbtn" method="post" class="ajax_form af_example">
+            <input type="hidden" name="feed_back" value="1">
+            <input type="hidden" name="formid" value="tpl_form_contact">
+            <input type="text" style="display: none !important;" name="nospam-2" value="">
+            <input type="email" style="display: none !important;" name="workemail-2" value="">
+            <div class="feedback__form">
+                <label class="feedback__label feedback__label--second" for="af_email">
+                    <div class="feedback__title email">Email</div>
+                    <input type="text" id="af_email" name="email" value="" aria-describedby="tellHelp"
+                        placeholder="example@gmail.com" maxlength="25" class="form-control">
+                    <div id="tellHelp" class="form_error"><span class="error_email">Это поле обязательно к
+                            заполнению.</span></div>
+                </label>
+                <label class="feedback__label feedback__label--second" for="af_pass">
+                    <div class="feedback__title email">Email</div>
+                    <input type="password" id="af_pass" name="pass" value="" aria-describedby="tellHelp"
+                        placeholder="*********" maxlength="25" class="form-control">
+                    <div id="tellHelp" class="form_error"><span class="error_pass">Это поле обязательно к
+                            заполнению.</span></div>
+                </label>
+
+            </div>
+            <div class="feedback__btn">
+                <button type="submit" name="feedbackbtn" value="1" class="modal-log-in__btn">
+                    <div class="modal-log-in-btn__text">LOG IN</div>
+                </button>
+            </div>
+            <div class="modal-log-in__text">Если у вас нет аккаунта, зарегистрируйтесь - <span class="modalLink" id="modalLink-log-in">SIGN UP</span></div>
+            <input type="hidden" name="af_action" value="152d2c7dd05bebc3542d42762a18f439">
+        </form>
+    </div>
+    <div class="modal-log-in__substrate"></div>
+</div>
+<!-- modal log-in -->
+
+<!-- modal sign-up -->
+<div class="modal-sign-up">
+    <div class="modal-sign-up__wrapper">
+        <div class="modal-sign-up__close"></div>
+        <h4 class="feedback__title_up">Sign Up</h4>
+        <form id="feedbackbtn" method="post" class="ajax_form af_example">
+            <input type="hidden" name="feed_back" value="1">
+            <input type="hidden" name="formid" value="tpl_form_contact">
+            <input type="text" style="display: none !important;" name="nospam-2" value="">
+            <input type="email" style="display: none !important;" name="workemail-2" value="">
+            <div class="feedback__form">
+                <label class="feedback__label feedback__label--second" for="af_name">
+                    <div class="feedback__title email">Имя пользователя</div>
+                    <input type="text" id="af_name" name="name" value="" aria-describedby="tellHelp"
+                        placeholder="example@gmail.com" maxlength="25" class="form-control">
+                    <div id="tellHelp" class="form_error"><span class="error_name">Это поле обязательно к
+                            заполнению.</span></div>
+                </label>
+                <label class="feedback__label feedback__label--second" for="af_email">
+                    <div class="feedback__title email">Email</div>
+                    <input type="text" id="af_email" name="email" value="" aria-describedby="tellHelp"
+                        placeholder="example@gmail.com" maxlength="25" class="form-control">
+                    <div id="tellHelp" class="form_error"><span class="error_email">Это поле обязательно к
+                            заполнению.</span></div>
+                </label>
+                <label class="feedback__label feedback__label--second" for="af_pass">
+                    <div class="feedback__title email">Email</div>
+                    <input type="password" id="af_pass" name="pass" value="" aria-describedby="tellHelp"
+                        placeholder="*********" maxlength="25" class="form-control">
+                    <div id="tellHelp" class="form_error"><span class="error_pass">Это поле обязательно к
+                            заполнению.</span></div>
+                </label>
+
+            </div>
+            <div class="feedback__btn">
+                <button type="submit" name="feedbackbtn" value="1" class="modal-sign-up__btn">
+                    <div class="modal-sign-up__text">LOG IN</div>
+                </button>
+            </div>
+            <div class="modal-sign-up__text">Если у вас уже есть аккаунт, авторизируйтесь - <span class="modalLink" id="modalLink-sign-up">LOG IN</span></div>
+            <input type="hidden" name="af_action" value="152d2c7dd05bebc3542d42762a18f439">
+        </form>
+    </div>
+    <div class="modal-sign-up__substrate"></div>
+</div>
+<!-- modal sign-up --> <section class="first-window">
+    <div class="container">
+        <div class="first-window__inner">
+            <div class="first-window__content">
+                <div class="first-window__subtitle">Find your Favorite</div>
+                <div class="first-window__title">RECIPES</div>
+                <a href="#fudi-app" class="first-window__btn">GET STARTED</a>
+                <div class="first-window__text">OR SEND US YOUR OWN RECIPES AND <a href="#">GET REWARDED</a>!</div>
+            </div>
+        </div>
+    </div>
+</section> <section class="benefits" id="benefits">
+    <div class="container">
+        <div class="benefits__inner">
+            <div class="benefits__card">
+                <div class="benefits__card-img">
+                    <img src="img/benefits_icon-1.png" alt="">
+                </div>
+                <div class="benefits__card-title title title--center">GET INSPIRED</div>
+                <div class="benefits__card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.
+                    </p>
+                </div>
+            </div>
+            <div class="benefits__card">
+                <div class="benefits__card-img">
+                    <img src="img/benefits_icon-2.png" alt="">
+                </div>
+                <div class="benefits__card-title title title--center">GET REWARDED</div>
+                <div class="benefits__card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.
+                    </p>
+                </div>
+            </div>
+            <div class="benefits__card">
+                <div class="benefits__card-img">
+                    <img src="img/benefits_icon-3.png" alt="">
+                </div>
+                <div class="benefits__card-title title title--center">GET SOCIAL</div>
+                <div class="benefits__card-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <section class="fudi-app" id="fudi-app">
+    <div class="container">
+        <div class="fudi-app__inner">
+            <div class="fudi-app__leftside">
+                <img src="img/app_iphone.png" alt="">
+            </div>
+            <div class="fudi-app__rightside">
+                <div class="fudi-app__title title title--left">INTRODUCING THE FUDI APP</div>
+                <div class="fudi-app__text">
+                    <p>
+                        Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta.
+                    </p>
+                    <p>
+                        Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac
+                        odio rhoncus, quis aliquam dolor accumsan.
+                    </p>
+                    <p>
+                        Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa.
+                    </p>
+                </div>
+                <div class="fudi-app__links">
+                    <a href="#"><img src="img/app_appstore.png" alt=""></a>
+                    <a href="#"><img src="img/app_googlepay.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> <section class="reviews" id="reviews">
+    <div class="container">
+        <div class="reviews__inner swiper">
+            <div class="reviews__slider swiper-wrapper">
+                <div class="reviews__slide swiper-slide">
+                    <div class="reviews__avatar">
+                        <img src="img/reviews_avatar.png" alt="">
+                    </div>
+                    <div class="reviews__text">
+                        “I am so happy because I found this recipe, and it just made my life easier. Thanks so much for sharing!”
+                    </div>
+                    <div class="reviews__author">
+                        - Michael Dawson, San Francisco, CA -
+                    </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                    <div class="reviews__avatar">
+                        <img src="img/reviews_avatar.png" alt="">
+                    </div>
+                    <div class="reviews__text">
+                        “I am so happy because I found this recipe, and it just made my life easier. Thanks so much for sharing!”
+                    </div>
+                    <div class="reviews__author">
+                        - Michael Dawson, San Francisco, CA -
+                    </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                    <div class="reviews__avatar">
+                        <img src="img/reviews_avatar.png" alt="">
+                    </div>
+                    <div class="reviews__text">
+                        “I am so happy because I found this recipe, and it just made my life easier. Thanks so much for sharing!”
+                    </div>
+                    <div class="reviews__author">
+                        - Michael Dawson, San Francisco, CA -
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section> <section class="recipts" id="recipts">
+    <div class="recipts__title title title--center">BROWSE BY CUISINES</div>
+    <div class="recipts__list">
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-1.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">327 Recipes</div>
+                <div class="recipts__item-title">ITALIAN</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-2.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">856 Recipes</div>
+                <div class="recipts__item-title">INDIAN</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-3.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">27 Recipes</div>
+                <div class="recipts__item-title">FRENCH</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-4.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">174 Recipes</div>
+                <div class="recipts__item-title">STEAKHOUSE</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-5.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">731 Recipes</div>
+                <div class="recipts__item-title">SEAFOOD</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-6.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">237 Recipes</div>
+                <div class="recipts__item-title">SUSHI</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-7.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">529 Recipes</div>
+                <div class="recipts__item-title">MEXICAN</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-8.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">145 Recipes</div>
+                <div class="recipts__item-title">CHINESE</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-9.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">327 Recipes</div>
+                <div class="recipts__item-title">PIZZA</div>
+            </div>
+        </a>
+        <a href="#" class="recipts__item">
+            <div class="recipts__item-img">
+                <img src="img/food-imgs/food_img-10.jpg" alt="">
+            </div>
+            <div class="recipts__item-content">
+                <div class="recipts__item-amount">1.437 Recipes</div>
+                <div class="recipts__item-title">AMERICAN</div>
+            </div>
+        </a>
+    </div>
+</section> <section class="stats" id="stats">
+    <div class="container">
+        <div class="stats__inner">
+            <div class="stats__objects-list">
+                <div class="stats__object">
+                    <div class="stats__number" id="statsNum1">23,567</div>
+                    <div class="stats__title">Recipes Available</div>
+                </div>
+                <div class="stats__object">
+                    <div class="stats__number" id="statsNum2">431,729</div>
+                    <div class="stats__title">Active Users</div>
+                </div>
+                <div class="stats__object">
+                    <div class="stats__number" id="statsNum3">892,173</div>
+                    <div class="stats__title">Positive Reviews</div>
+                </div>
+                <div class="stats__object">
+                    <div class="stats__number" id="statsNum4">56,581</div>
+                    <div class="stats__title">Photos & Videos</div>
+                </div>
+                <div class="stats__object">
+                    <div class="stats__number" id="statsNum5">3,182</div>
+                    <div class="stats__title">Spices and Herbs</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__copyright">©2014 Fudi. All Rights Reserved.</div>
+            <div class="footer__link">DESIGN BY: <a href="#">WWW.BEKADES.COM</a></div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
