@@ -21,6 +21,28 @@
     .reviews__inner .swiper-pagination-fraction {
         bottom: 20px;
     }
+    .modal-log-in {
+        overflow-y: scroll;
+        padding: 30px 10px;
+        &__wrapper {
+            max-width: 735px;
+            width: 100%;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .modal-sign-up {
+        overflow-y: scroll;
+        padding: 30px 10px;
+        &__wrapper {
+            max-width: 735px;
+            width: 100%;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
 }
 
 @media(max-width: 630px) {

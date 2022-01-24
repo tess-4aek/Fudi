@@ -26,11 +26,11 @@
                     <div class="menu-btn__elem"></div>
                     <nav class="header__menu-content">
                         <ul>
-                            <li><a href="#benefits">Преимущества</a></li>
-                            <li><a href="#fudi-app">Приложение</a></li>
-                            <li><a href="#reviews">Отзывы</a></li>
-                            <li><a href="#recipts">Рецепты</a></li>
-                            <li><a href="#stats">Статистика</a></li>
+                            <li><a href="#benefits" class="custom-link">Преимущества</a></li>
+                            <li><a href="#fudi-app" class="custom-link">Приложение</a></li>
+                            <li><a href="#reviews" class="custom-link">Отзывы</a></li>
+                            <li><a href="#recipts" class="custom-link">Рецепты</a></li>
+                            <li><a href="#stats" class="custom-link">Статистика</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -43,7 +43,10 @@
 <div class="modal-log-in">
     <div class="modal-log-in__wrapper">
         <div class="modal-log-in__close"></div>
-        <h4 class="feedback__title_up">Log In</h4>
+        <div class="modal-log-in__logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="feedback__title_up">Log-In</div>
         <form id="feedbackbtn" method="post" class="ajax_form af_example">
             <input type="hidden" name="feed_back" value="1">
             <input type="hidden" name="formid" value="tpl_form_contact">
@@ -51,16 +54,14 @@
             <input type="email" style="display: none !important;" name="workemail-2" value="">
             <div class="feedback__form">
                 <label class="feedback__label feedback__label--second" for="af_email">
-                    <div class="feedback__title email">Email</div>
                     <input type="text" id="af_email" name="email" value="" aria-describedby="tellHelp"
-                        placeholder="example@gmail.com" maxlength="25" class="form-control">
+                        placeholder="Username or email" maxlength="25" class="form-control">
                     <div id="tellHelp" class="form_error"><span class="error_email">Это поле обязательно к
                             заполнению.</span></div>
                 </label>
                 <label class="feedback__label feedback__label--second" for="af_pass">
-                    <div class="feedback__title email">Email</div>
                     <input type="password" id="af_pass" name="pass" value="" aria-describedby="tellHelp"
-                        placeholder="*********" maxlength="25" class="form-control">
+                        placeholder="password" maxlength="25" class="form-control">
                     <div id="tellHelp" class="form_error"><span class="error_pass">Это поле обязательно к
                             заполнению.</span></div>
                 </label>
@@ -83,7 +84,10 @@
 <div class="modal-sign-up">
     <div class="modal-sign-up__wrapper">
         <div class="modal-sign-up__close"></div>
-        <h4 class="feedback__title_up">Sign Up</h4>
+        <div class="modal-log-in__logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="feedback__title_up">Sign-Up</div>
         <form id="feedbackbtn" method="post" class="ajax_form af_example">
             <input type="hidden" name="feed_back" value="1">
             <input type="hidden" name="formid" value="tpl_form_contact">
@@ -91,23 +95,20 @@
             <input type="email" style="display: none !important;" name="workemail-2" value="">
             <div class="feedback__form">
                 <label class="feedback__label feedback__label--second" for="af_name">
-                    <div class="feedback__title email">Имя пользователя</div>
                     <input type="text" id="af_name" name="name" value="" aria-describedby="tellHelp"
-                        placeholder="example@gmail.com" maxlength="25" class="form-control">
+                        placeholder="username" maxlength="25" class="form-control">
                     <div id="tellHelp" class="form_error"><span class="error_name">Это поле обязательно к
                             заполнению.</span></div>
                 </label>
                 <label class="feedback__label feedback__label--second" for="af_email">
-                    <div class="feedback__title email">Email</div>
                     <input type="text" id="af_email" name="email" value="" aria-describedby="tellHelp"
-                        placeholder="example@gmail.com" maxlength="25" class="form-control">
+                        placeholder="email" maxlength="25" class="form-control">
                     <div id="tellHelp" class="form_error"><span class="error_email">Это поле обязательно к
                             заполнению.</span></div>
                 </label>
                 <label class="feedback__label feedback__label--second" for="af_pass">
-                    <div class="feedback__title email">Email</div>
                     <input type="password" id="af_pass" name="pass" value="" aria-describedby="tellHelp"
-                        placeholder="*********" maxlength="25" class="form-control">
+                        placeholder="password" maxlength="25" class="form-control">
                     <div id="tellHelp" class="form_error"><span class="error_pass">Это поле обязательно к
                             заполнению.</span></div>
                 </label>
@@ -115,7 +116,7 @@
             </div>
             <div class="feedback__btn">
                 <button type="submit" name="feedbackbtn" value="1" class="modal-sign-up__btn">
-                    <div class="modal-sign-up__text">LOG IN</div>
+                    <div class="modal-sign-up-btn__text">LOG IN</div>
                 </button>
             </div>
             <div class="modal-sign-up__text">Если у вас уже есть аккаунт, авторизируйтесь - <span class="modalLink" id="modalLink-sign-up">LOG IN</span></div>
@@ -128,8 +129,8 @@
     <div class="container">
         <div class="first-window__inner">
             <div class="first-window__content">
-                <div class="first-window__subtitle">Find your Favorite</div>
-                <div class="first-window__title">RECIPES</div>
+                <div class="first-window__subtitle _anim-items">Find your Favorite</div>
+                <div class="first-window__title _anim-items">RECIPES</div>
                 <a href="#fudi-app" class="first-window__btn">GET STARTED</a>
                 <div class="first-window__text">OR SEND US YOUR OWN RECIPES AND <a href="#">GET REWARDED</a>!</div>
             </div>
@@ -138,7 +139,7 @@
 </section> <section class="benefits" id="benefits">
     <div class="container">
         <div class="benefits__inner">
-            <div class="benefits__card">
+            <div class="benefits__card _anim-items">
                 <div class="benefits__card-img">
                     <img src="img/benefits_icon-1.png" alt="">
                 </div>
@@ -149,7 +150,7 @@
                     </p>
                 </div>
             </div>
-            <div class="benefits__card">
+            <div class="benefits__card _anim-items">
                 <div class="benefits__card-img">
                     <img src="img/benefits_icon-2.png" alt="">
                 </div>
@@ -160,7 +161,7 @@
                     </p>
                 </div>
             </div>
-            <div class="benefits__card">
+            <div class="benefits__card _anim-items">
                 <div class="benefits__card-img">
                     <img src="img/benefits_icon-3.png" alt="">
                 </div>
@@ -179,7 +180,7 @@
             <div class="fudi-app__leftside">
                 <img src="img/app_iphone.png" alt="">
             </div>
-            <div class="fudi-app__rightside">
+            <div class="fudi-app__rightside _anim-items">
                 <div class="fudi-app__title title title--left">INTRODUCING THE FUDI APP</div>
                 <div class="fudi-app__text">
                     <p>
@@ -204,7 +205,7 @@
     <div class="container">
         <div class="reviews__inner swiper">
             <div class="reviews__slider swiper-wrapper">
-                <div class="reviews__slide swiper-slide">
+                <div class="reviews__slide swiper-slide _anim-items">
                     <div class="reviews__avatar">
                         <img src="img/reviews_avatar.png" alt="">
                     </div>
@@ -242,9 +243,22 @@
         </div>
     </div>
 </section> <section class="recipts" id="recipts">
-    <div class="recipts__title title title--center">BROWSE BY CUISINES</div>
+    <div class="recipts__title title title--center _anim-items">BROWSE BY CUISINES</div>
+    <div class="recipts__select select">
+        <div class="select__header">
+            <input class="select__input" type="text" value="">
+            <span class="select__current">Стандартная</span>
+            <div class="select__icon"></div>
+        </div>
+
+        <div class="select__body">
+            <div class="select__item" id="sortUpToDown">От большего к меньшему</div>
+            <div class="select__item" id="sortDownToUp">От меньшего к большему</div>
+            <div class="select__item" id="sortNaN">Стандартная</div>
+        </div>
+    </div>
     <div class="recipts__list">
-        <a href="#" class="recipts__item">
+        <!-- <a href="#" class="recipts__item">
             <div class="recipts__item-img">
                 <img src="img/food-imgs/food_img-1.jpg" alt="">
             </div>
@@ -333,30 +347,30 @@
                 <div class="recipts__item-amount">1.437 Recipes</div>
                 <div class="recipts__item-title">AMERICAN</div>
             </div>
-        </a>
+        </a> -->
     </div>
 </section> <section class="stats" id="stats">
     <div class="container">
         <div class="stats__inner">
             <div class="stats__objects-list">
                 <div class="stats__object">
-                    <div class="stats__number" id="statsNum1">23,567</div>
+                    <div class="stats__number _anim-items" data-end="23567" data-start="21567">23,567</div>
                     <div class="stats__title">Recipes Available</div>
                 </div>
                 <div class="stats__object">
-                    <div class="stats__number" id="statsNum2">431,729</div>
+                    <div class="stats__number _anim-items" data-end="431729" data-start="429451">431,729</div>
                     <div class="stats__title">Active Users</div>
                 </div>
                 <div class="stats__object">
-                    <div class="stats__number" id="statsNum3">892,173</div>
+                    <div class="stats__number _anim-items" data-end="892173" data-start="890173">892,173</div>
                     <div class="stats__title">Positive Reviews</div>
                 </div>
                 <div class="stats__object">
-                    <div class="stats__number" id="statsNum4">56,581</div>
+                    <div class="stats__number _anim-items" data-end="56581" data-start="54581">56,581</div>
                     <div class="stats__title">Photos & Videos</div>
                 </div>
                 <div class="stats__object">
-                    <div class="stats__number" id="statsNum5">3,182</div>
+                    <div class="stats__number _anim-items" data-end="3182" data-start="154">3,182</div>
                     <div class="stats__title">Spices and Herbs</div>
                 </div>
             </div>
@@ -368,7 +382,7 @@
     <div class="container">
         <div class="footer__inner">
             <div class="footer__copyright">©2014 Fudi. All Rights Reserved.</div>
-            <div class="footer__link">DESIGN BY: <a href="#">WWW.BEKADES.COM</a></div>
+            <div class="footer__link">DESIGN BY: <a href="#" class="custom-link">WWW.BEKADES.COM</a></div>
         </div>
     </div>
 </footer>
