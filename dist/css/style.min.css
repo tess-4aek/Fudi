@@ -739,7 +739,7 @@ a:hover {
 }
 
 .first-window {
-  height: 880px;
+  min-height: 880px;
   background-image: url(../img/first-window_bg.jpg);
   background-color: #8b4054;
   background-repeat: no-repeat;
@@ -763,6 +763,7 @@ a:hover {
   line-height: 100px;
   font-weight: 700;
   color: #fff;
+  margin: 0;
 }
 .first-window__title._anim-items {
   transform: translate(0px, 120%);
@@ -860,6 +861,9 @@ a:hover {
   background-color: #f7f7f7;
   padding-top: 100px;
   overflow: hidden;
+}
+.fudi-app__title {
+  margin: 0;
 }
 .fudi-app__inner {
   display: grid;

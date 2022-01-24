@@ -719,7 +719,7 @@ a:hover {
 // header styles END
 // first-window styles START
 .first-window {
-    height: 880px;
+    min-height: 880px;
     background-image: url(../img/first-window_bg.jpg);
     background-color: #8b4054;
     background-repeat: no-repeat;
@@ -742,6 +742,7 @@ a:hover {
         line-height: 100px;
         font-weight: 700;
         color: #fff;
+        margin: 0;
         &._anim-items {
             transform: translate(0px, 120%);
             opacity: 0;
@@ -844,6 +845,9 @@ a:hover {
     background-color: #f7f7f7;
     padding-top: 100px;
     overflow: hidden;
+    &__title {
+        margin: 0;
+    }
     &__inner {
         display: grid;
         grid-template-columns: auto auto;
